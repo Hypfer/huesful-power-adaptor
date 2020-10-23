@@ -1,0 +1,191 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PJ-202BH:PJ-202BH J1
+U 1 1 5F931ACC
+P 2050 2100
+F 0 "J1" H 2045 2440 50  0000 C CNN
+F 1 "PJ-202BH" H 2045 2349 50  0000 C CNN
+F 2 "PJ-202BH:CUI_PJ-202BH" H 2050 2100 50  0001 L BNN
+F 3 "Manufacturer recommendations" H 2050 2100 50  0001 L BNN
+F 4 "1.02" H 2050 2100 50  0001 L BNN "Field4"
+F 5 "CUI INC" H 2050 2100 50  0001 L BNN "Field5"
+	1    2050 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PJ-048H:PJ-048H J2
+U 1 1 5F934203
+P 2850 2700
+F 0 "J2" V 2842 2523 50  0000 R CNN
+F 1 "PJ-048H" V 2751 2523 50  0000 R CNN
+F 2 "PJ-048H:CUI_PJ-048H" H 2850 2700 50  0001 L BNN
+F 3 "1.02" H 2850 2700 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 2850 2700 50  0001 L BNN "Field4"
+F 5 "CUI" H 2850 2700 50  0001 L BNN "Field5"
+	1    2850 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PJ-048H:PJ-048H J3
+U 1 1 5F934D34
+P 3550 2700
+F 0 "J3" V 3542 2523 50  0000 R CNN
+F 1 "PJ-048H" V 3451 2523 50  0000 R CNN
+F 2 "PJ-048H:CUI_PJ-048H" H 3550 2700 50  0001 L BNN
+F 3 "1.02" H 3550 2700 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 3550 2700 50  0001 L BNN "Field4"
+F 5 "CUI" H 3550 2700 50  0001 L BNN "Field5"
+	1    3550 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PJ-048H:PJ-048H J4
+U 1 1 5F935F46
+P 4250 2700
+F 0 "J4" V 4242 2523 50  0000 R CNN
+F 1 "PJ-048H" V 4151 2523 50  0000 R CNN
+F 2 "PJ-048H:CUI_PJ-048H" H 4250 2700 50  0001 L BNN
+F 3 "1.02" H 4250 2700 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 4250 2700 50  0001 L BNN "Field4"
+F 5 "CUI" H 4250 2700 50  0001 L BNN "Field5"
+	1    4250 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 2200 4350 2500
+Wire Wire Line
+	3650 2500 3650 2200
+Connection ~ 3650 2200
+Wire Wire Line
+	3650 2200 4250 2200
+Wire Wire Line
+	2950 2500 2950 2200
+Wire Wire Line
+	2950 2200 3550 2200
+Wire Wire Line
+	3450 2500 3450 2000
+Connection ~ 3450 2000
+Wire Wire Line
+	3450 2000 4150 2000
+Wire Wire Line
+	2750 2500 2750 2000
+Wire Wire Line
+	2750 2000 3450 2000
+$Comp
+L power:GND #PWR0101
+U 1 1 5F93EB42
+P 2450 2500
+F 0 "#PWR0101" H 2450 2250 50  0001 C CNN
+F 1 "GND" H 2455 2327 50  0000 C CNN
+F 2 "" H 2450 2500 50  0001 C CNN
+F 3 "" H 2450 2500 50  0001 C CNN
+	1    2450 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2200 2850 2200
+Connection ~ 2950 2200
+Wire Wire Line
+	2750 2000 2350 2000
+Connection ~ 2750 2000
+Text Label 4350 2200 0    50   ~ 0
+GND
+Wire Wire Line
+	4150 2000 4150 2500
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 5F938A6A
+P 2050 1600
+F 0 "J5" H 1968 1275 50  0000 C CNN
+F 1 "IN" H 1968 1366 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2050 1600 50  0001 C CNN
+F 3 "~" H 2050 1600 50  0001 C CNN
+	1    2050 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2250 1600 2350 1600
+Wire Wire Line
+	2350 1600 2350 2000
+Connection ~ 2350 2000
+Wire Wire Line
+	2350 2000 2250 2000
+Wire Wire Line
+	2250 1500 2450 1500
+Wire Wire Line
+	2450 1500 2450 2200
+Connection ~ 2450 2200
+Wire Wire Line
+	2250 2200 2450 2200
+Wire Wire Line
+	2450 2500 2450 2200
+$Comp
+L Connector:Screw_Terminal_01x02 J6
+U 1 1 5F93D322
+P 2750 1500
+F 0 "J6" V 2714 1312 50  0000 R CNN
+F 1 "OUT 1" V 2623 1312 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2750 1500 50  0001 C CNN
+F 3 "~" H 2750 1500 50  0001 C CNN
+	1    2750 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J7
+U 1 1 5F93E71D
+P 3450 1500
+F 0 "J7" V 3414 1312 50  0000 R CNN
+F 1 "OUT 2" V 3323 1312 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3450 1500 50  0001 C CNN
+F 3 "~" H 3450 1500 50  0001 C CNN
+	1    3450 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J8
+U 1 1 5F93EFCF
+P 4150 1500
+F 0 "J8" V 4114 1312 50  0000 R CNN
+F 1 "OUT 3" V 4023 1312 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4150 1500 50  0001 C CNN
+F 3 "~" H 4150 1500 50  0001 C CNN
+	1    4150 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 1700 2750 2000
+Wire Wire Line
+	3450 1700 3450 2000
+Wire Wire Line
+	4150 1700 4150 2000
+Connection ~ 4150 2000
+Wire Wire Line
+	3550 1700 3550 2200
+Connection ~ 3550 2200
+Wire Wire Line
+	3550 2200 3650 2200
+Wire Wire Line
+	2850 1700 2850 2200
+Connection ~ 2850 2200
+Wire Wire Line
+	2850 2200 2450 2200
+Wire Wire Line
+	4250 1700 4250 2200
+Connection ~ 4250 2200
+Wire Wire Line
+	4250 2200 4350 2200
+$EndSCHEMATC
